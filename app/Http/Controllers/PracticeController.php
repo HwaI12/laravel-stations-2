@@ -6,12 +6,12 @@ class PracticeController extends Controller
 {
     public function sample()
     {
-        return response('practice');
+        return view('practice');
     }
 
-          public function sample2()
+    public function sample2()
     {
         $test = 'practice2';
-                    return response($test);
+            return view('practice2', ['testParam' => $test]);
     }
 }
